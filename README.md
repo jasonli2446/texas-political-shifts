@@ -16,6 +16,7 @@ DATASET 2 (TEXAS SECRETARY OF STATE): The dataset from the Texas Secretary of St
 
 DATASET 3 (TEXAS DEPARTMENT OF TRANSPORTATION): The dataset from the Texas Department of Transportation was a shapefile, so it was mainly used for mapping. We joined this file to our other datasets to create the maps.
 
+# VISUALIZATIONS
 Total Votes Cast Visualization Description: 
 This plot shows the total number of votes cast in Texas Presidential elections from 2000 to 2024. We thought this may be interesting to see whether voter turnout affected the results of the race.
 
