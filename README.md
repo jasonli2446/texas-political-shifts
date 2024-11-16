@@ -1,5 +1,5 @@
 # texas-political-shifts
-Investigating political shifts in Texas with election data from 2000-2024
+Investigating political shifts in Texas with election data from 2000-2024 with R
 
 # INTRODUCTION
 The topic under study for our Exploratory Data Analysis is the political shifts of Texas in Presidential elections from 2000 to 2024. Specifically, we want to see how the trend of Texas getting more competitive changed in 2024. Using this data, we may learn what key areas of Texas may have resulted in the reversing of trends in the 2024 Presidential election.
