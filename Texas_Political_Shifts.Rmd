@@ -173,10 +173,12 @@ ggplot(state_total_votes_party, aes(
     x = "Year",
     y = "Number of Votes (millions)",
     color = "Party",
-    title = "Number of Votes for Major Parties in Texas Presidential Elections",
+    title = "1. Number of Votes for Major Parties in Texas Presidential Elections",
     subtitle = "2000-2024",
     caption = "MIT Election Lab & Texas Secretary of State"
   )
+
+ggsave("plot1.png")
 ```
 
 ## Plot Competitive Margin Histogram
@@ -205,6 +207,8 @@ ggplot(data_texas_2000_2024, aes(x = difference, fill = result)) +
     legend.text = element_text(size = 8),
     legend.margin = margin(t = 3)
   )
+
+ggsave("plot2.png")
 ```
 
 
@@ -232,13 +236,15 @@ texas_plot_2000_2020 <- ggplot(filter(texas_shape, year != "2024"), aes(fill = d
   facet_wrap(~year) +
   theme_map() +
   scale_fill_distiller(type = "div", palette = "RdBu", limits = c(-1, 1) * abs(max(texas_shape$difference, na.rm = TRUE))) +
-  labs(title = "Texas Presidential Election Results",
+  labs(title = "3. Texas Presidential Election Results",
        subtitle = "2000-2024",
        fill = "Partisan Margin of Victory") +
   theme(legend.position = "bottom")
 
 # Arrange maps side by side
 ggarrange(texas_plot_2000_2020, texas_plot_2024, ncol = 2, nrow = 1)
+
+ggsave("plot3.png", bg = "white")
 ```
 
 ## Competitive counties map
